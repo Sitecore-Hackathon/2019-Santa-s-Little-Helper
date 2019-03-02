@@ -48,15 +48,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 15568be6-4cfa-4a8f-a4fe-f9d36fbad18a
+revision: 29c3c463-9d12-4469-891b-a4ec37121b08
 
 ----field----
 field: {C032DB76-CC34-4F8F-BE2D-D2FB35237AAB}
 name: Display name
 key: display name
-content-length: 3
+content-length: 18
 
-SLH
+SLH Bucket Manager
 ----field----
 field: {BB865E67-0BE3-49D8-B8BD-1DB4B34AB2E3}
 name: Tool tip
@@ -91,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-15568be6-4cfa-4a8f-a4fe-f9d36fbad18a
+29c3c463-9d12-4469-891b-a4ec37121b08
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T030853Z
+20190302T170945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
