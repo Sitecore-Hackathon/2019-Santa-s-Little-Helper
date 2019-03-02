@@ -6,6 +6,7 @@ using Sitecore.Data.Managers;
 using SLH.Foundation.Buckets.Models;
 using System.Collections.Generic;
 using System.Linq;
+using Sitecore.Shell.Applications.ContentEditor;
 
 namespace SLH.Foundation.Buckets.Helpers
 {
@@ -61,5 +62,29 @@ namespace SLH.Foundation.Buckets.Helpers
 
             return templateFields;
         }
+
+        public static string GenerateFieldEditorUrl(Item item, IEnumerable<TemplateField> fields)
+        {
+            var fieldsEditor = string.Join("|", fields.Select(x => x.FieldName));
+
+            FieldEditorOptions fieldEditorOption = new FieldEditorOptions(CreateFieldDescriptors(item, fieldsEditor));
+            fieldEditorOption.SaveItem = true;
+            fieldEditorOption.PreserveSections = true;
+            return fieldEditorOption.ToUrlString().ToString();
+        }
+
+        #region Private methods
+
+        private static List<FieldDescriptor> CreateFieldDescriptors(Item item, string fields)
+        {
+            List<FieldDescriptor> fieldDescriptors = new List<FieldDescriptor>();
+            foreach (string str in new Sitecore.Text.ListString(fields))
+            {
+                fieldDescriptors.Add(new FieldDescriptor(item, str));
+            }
+            return fieldDescriptors;
+        }
+
+        #endregion
     }
 }

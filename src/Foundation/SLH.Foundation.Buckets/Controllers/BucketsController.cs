@@ -36,7 +36,14 @@ namespace SLH.Foundation.Buckets.Controllers
             foreach (var bucketable in bucketableItems)
             {
                 var fields = BucketsHelper.GetTemplateFields(bucketable);
-                response.Add(new BucketableResponse { BucketId = bucketItemId.Guid, ItemId = bucketable.ID.Guid, ItemName = bucketable.DisplayName, Fields = fields });
+                response.Add(new BucketableResponse
+                {
+                    BucketId = bucketItemId.Guid,
+                    ItemId = bucketable.ID.Guid,
+                    ItemName = bucketable.DisplayName,
+                    Url = BucketsHelper.GenerateFieldEditorUrl(bucketable, fields),
+                    Fields = fields
+                });
             }
 
             return Json(response, JsonRequestBehavior.AllowGet);
