@@ -53,6 +53,13 @@ content-length: 0
 
 
 ----field----
+field: {7C90BFDE-F50C-4CDA-94CA-CE712C9675C6}
+name: Window Mode
+key: window mode
+content-length: 9
+
+Maximized
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
@@ -76,7 +83,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7dbdcd64-62ca-4700-9393-a89b6efc5fe0
+revision: 98a5a3a2-d86a-4d41-951f-a187c27765c9
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -119,14 +126,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7dbdcd64-62ca-4700-9393-a89b6efc5fe0
+98a5a3a2-d86a-4d41-951f-a187c27765c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T170933Z
+20190302T200715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -116,6 +116,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sitecore modules\Shell\SLH\edit.png" />
+    <Content Include="sitecore modules\Shell\SLH\publish.png" />
     <Content Include="sitecore modules\Shell\SLH\SLH.css" />
     <Content Include="sitecore modules\Shell\SLH\SLH.js" />
     <Content Include="Views\web.config" />

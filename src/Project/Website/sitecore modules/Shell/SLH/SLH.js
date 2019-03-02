@@ -22,6 +22,29 @@ var imageFormatter = function (cell, formatterParams) {
     return img;
 }
 
+var contentFormatter = function (cell, formatterParams) {
+
+    if (!cell) {
+        return "";
+    }
+
+    var data = cell.getData();
+    
+    if (!data) {
+        return "";
+    }
+
+    var title = cell.getColumn().getDefinition().title;
+
+    if (!title) {
+        return "";
+    }
+
+    var index = data.Fields.findIndex(item => item.FieldName === title)
+
+    return data.Fields[index].FieldValue;
+}
+
 function PreviewItem(id) {
 
 	var url = "/sitecore modules/Shell/SLH/Preview.aspx?id=%7B" + id + "%7D&la=en&language=en&vs=1&version=1&database=master&readonly=0&db=master";
@@ -30,19 +53,16 @@ function PreviewItem(id) {
 	$("#preview-item-content").html("<iframe src='" + url + "' class='edit-frame'></iframe>");
 }
 
-function OpenContentEditor(id, tableId) {
+function OpenContentEditor(url, tableId) {
 
     $("#table-id").val(tableId);
+    
+    top._close = function () {
+        $("#edit-item-dialog").dialog("close");
+    };
 
-    $.get("/slh_api/buckets/editor?id=" + id, function (url) {
-
-        top._close = function () {
-            $("#edit-item-dialog").dialog("close");
-        };
-
-        $("#edit-item-dialog").dialog("open");
-        $("#edit-item-content").html("<iframe src='" + url + "' class='edit-frame'></iframe>");
-    });
+    $("#edit-item-dialog").dialog("open");
+    $("#edit-item-content").html("<iframe src='" + url + "' class='edit-frame'></iframe>");
 }
 
 function PublishItem(id, tableId) {
@@ -71,25 +91,22 @@ function SetupTable(tableId, categoryId, articleType) {
         }
 
         var fields = bucketData[0].Fields;
-        var columnDetails = [];
+        var columnDetails = [
+            {
+                title: "Item Name",
+                field: "ItemName",
+            }
+        ];
 
         for (var i = 0; i < fields.length; i++) {
             var column = {
                 title: fields[i].FieldName,
+                formatter: contentFormatter
                 //field: "LogoUrl", headerSort: false, align: "center", formatter: imageFormatter, width: 100
             };
 
             columnDetails.push(column);
         }
-        
-
-        /*var columnDetails = [
-            { title: "Source", field: "LogoUrl", headerSort: false, align: "center", formatter: imageFormatter, width: 100 },
-            { title: "Title", field: "Title", headerSort: false, width: 330, formatter: "textarea", cellClick: function (e, cell) { window.open(cell.getRow().getData().Url, '_blank'); } },
-            { title: "Url", field: "Url", headerSort: false, width: 70, formatter: function (cell, formatterParams) { return (cell.getValue()) ? "<span class='open-category'>Open</span>" : "None" }, cellClick: function (e, cell) { if (cell.getValue()) { window.open(cell.getValue(), "_blank"); } } },
-            //{ title: "Categories", field: "Categories", headerSort: false, formatter: function (cell, formatterParams) { cell.getElement().css({ "white-space": "normal" }); return cell.getValue().map(x=>"<a class='open-category' href='javascript:OpenTab(\"#" + articleType + "tabs-" + ((categories[x]) ? categories[x].toLowerCase() : "") + "\")'>" + categories[x] + "</a>").join(", "); } },
-            { title: "Created Date", field: "CreatedDate", align: "center", headerSort: false, width: 90 }
-        ];*/
 
         if (articleType === "active") {
 		
@@ -115,37 +132,26 @@ function SetupTable(tableId, categoryId, articleType) {
         $(tableId).tabulator({
             data: bucketData,
 		    pagination: pagination,
-            height: "500px",
+            height: "100%",
             layout: "fitColumns",
             placeholder: "No Data Set",
             movableRows: allowSorting, //enable user movable rows
             index: "Id",
             columns: columnDetails,
-            rowFormatter: function (row) {
-                row.getElement().css({ "height": "50px" });
-            },
-            //ajaxResponse: function (url, params, response) {
-                // store original table data
-            //    tableData = response;
-            //    return response;
-            //},
+            /*rowFormatter: function (row) {
+                row.getElement().css({ "height": "30px" });
+            },*/
         });
-
-        //$(tableId).tabulator("setData", "/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId);
 
     });
 }
 
 function GetPublishControl(cell, tableId) {
-    return "<a class='open-category actions' href='javascript:PublishItem(\"" + cell.getRow().getData().Id + "\", \"" + tableId + "\")'>Publish <img width='16' height='16' src='/temp/iconcache/office/24x24/publish.png' alt='Publish'/></a>";
+    return "<a class='open-category actions' href='javascript:PublishItem(\"" + cell.getRow().getData().ItemId + "\", \"" + tableId + "\")'>Publish <img width='16' height='16' src='/sitecore modules/Shell/SLH/publish.png' alt='Publish'/></a>";
 }
 
 function GetOpenContentEditor(cell, tableId) {
-    return "<a class='open-category actions' href='javascript:OpenContentEditor(\"" + cell.getRow().getData().BucketId + "\", \"" + tableId + "\")'>Edit <img width='16' height='16' src='/temp/iconcache/applications/16x16/edit.png' alt='Edit'/></a>";
-}
-
-function GetPreviewControl(cell) {
-    return "<a class='open-category actions' href='javascript:PreviewItem(\"" + cell.getRow().getData().Id + "\")'>Preview <img width='16' height='16' src='/temp/iconcache/applications/16x16/document_view.png' alt='Preview'/></a>";
+    return "<a class='open-category actions' href='javascript:OpenContentEditor(\"" + cell.getRow().getData().Url + "\", \"" + tableId + "\")'>Edit <img width='16' height='16' src='/sitecore modules/Shell/SLH/edit.png' alt='Edit'/></a>";
 }
 
 
@@ -174,17 +180,6 @@ $(function () {
 			$(tableId).tabulator("setData");
 		}
 	});
-	
-	$("#preview-item-dialog").dialog({
-		autoOpen: false,
-		height: 600,
-		width: 1290,
-		modal: true,
-		buttons: {},
-		close: function () {
-			$("#preview-item-content").html("");
-		}
-	});
 
 	$("#dialog-publish-confirm").dialog({
 		resizable: false,
@@ -199,7 +194,7 @@ $(function () {
 				
 				var id = $("#item-id").val();
 
-                $.post("/slh_api/buckets/PublishItem", { id: id }, function (data) {
+                $.post("/slh_api/buckets/PublishItem", { itemId: id }, function (data) {
 					if (data == true) {
 						$("#refresh-table").val("true");
 						var messageDialogOpen = $("#dialog-publish-message").dialog('isOpen');
