@@ -3,6 +3,7 @@
 var categories = [];
 var tableData;
 var currentBucketId;
+var currentTableId;
 
 $.get("/slh_api/buckets/GetBuckets", function (data) {
     categories = data;
@@ -80,14 +81,14 @@ function OpenTab(tabId) {
 }
 
 function RefreshTableData(tableId, categoryId, articleType) {
-    currentBucketId = articleType;
     $.get("/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId, function (bucketData) {
-        $(tableId).tabulator("setData", bucketData);
+        $(currentTableId).tabulator("setData", bucketData);
     });
 }
 
 function SetupTable(tableId, categoryId, articleType) {
     currentBucketId = articleType;
+    currentTableId = tableId;
     $.get("/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId, function (bucketData) {
         
 	    var allowSorting = false;
@@ -164,6 +165,11 @@ function GetOpenContentEditor(cell, tableId) {
 
 
 $(function () {
+
+    $(".reload-btn").click(function () {
+        var tableId = $("#table-id").val();
+        RefreshTableData(tableId, "", currentBucketId);
+    });
 
 	$("#tabs").tabs({
 		beforeLoad: function (event, ui) {
