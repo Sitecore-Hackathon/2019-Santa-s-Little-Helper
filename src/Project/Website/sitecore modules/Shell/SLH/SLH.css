@@ -1,14 +1,20 @@
 ﻿#container {
-    /*overflow-y: scroll;*/
+    font-size: small;
 }
 
 .custom-font {
-	font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
 }
 
 #category-tabs {
-	border: none;
-	font-family: 'Oswald', sans-serif;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+}
+
+.open-category {
+    font-weight: bold;
 }
 
 .open-category:hover {
@@ -16,7 +22,7 @@
 }
 
 .actions {
-	width: 75px;
+	width: 70px;
     display: inline-block;
 }
 
@@ -40,6 +46,10 @@
 .ui-tabs-vertical .ui-tabs-nav li a { display:block; width: 100%; outline: none; }
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; margin-bottom: 0.2em; }
 .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 1200px;}
+
+.tabulator {
+    font-size: small;
+}
 
 .content-image {
     max-height: 100px;

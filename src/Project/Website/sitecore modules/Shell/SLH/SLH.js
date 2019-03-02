@@ -133,7 +133,7 @@ function SetupTable(tableId, categoryId, articleType) {
         }
         else {
             columnDetails = columnDetails.concat([
-                { title: "Actions", field: "", headerSort: false, formatter: function (cell, formatterParams) { return GetOpenContentEditor(cell, tableId) + " " + GetPublishControl(cell, tableId); } }
+                { title: "Actions", field: "", headerSort: false, width: 160, formatter: function (cell, formatterParams) { return GetOpenContentEditor(cell, tableId) + " " + GetPublishControl(cell, tableId); } }
             ]);
         }
 
