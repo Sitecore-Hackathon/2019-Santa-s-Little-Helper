@@ -74,8 +74,12 @@ namespace SLH.Foundation.Buckets.Helpers
                     return item.GetCheckBoxValueByFieldName(field.Name).ToString();
 
                 case "date":
+                    DateField dateField = item.Fields[field.Name];
+                    return dateField.DateTime.ToString("d");
+
                 case "datetime":
-                    return item.Fields[field.Name].Value;
+                    DateField datetimeField = item.Fields[field.Name];
+                    return datetimeField.DateTime.ToString("g");
 
                 case "number":
                     return item.Fields[field.Name].Value;

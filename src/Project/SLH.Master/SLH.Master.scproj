@@ -446,11 +446,6 @@
       <SourceWebVirtualPath>/SLH.Foundation.Buckets.csproj</SourceWebVirtualPath>
       <SourceWebProjectId>7999b10b-aeff-473d-bc78-d7555af293a5</SourceWebProjectId>
     </SourceWebProjects>
-    <SourceWebProjects Include="{f9431ceb-c242-4518-a888-d178608108c1}|Feature\SLH.Feature.Products\SLH.Feature.Products.csproj">
-      <SourceWebPhysicalPath>..\..\Feature\SLH.Feature.Products</SourceWebPhysicalPath>
-      <SourceWebVirtualPath>/SLH.Feature.Products.csproj</SourceWebVirtualPath>
-      <SourceWebProjectId>f9431ceb-c242-4518-a888-d178608108c1</SourceWebProjectId>
-    </SourceWebProjects>
     <SourceWebProjects Include="{f9e8d36e-8a9a-47b0-9201-69da7941486c}|Project\Website\SLH.Website.csproj">
       <SourceWebPhysicalPath>..\Website</SourceWebPhysicalPath>
       <SourceWebVirtualPath>/SLH.Website.csproj</SourceWebVirtualPath>
@@ -458,10 +453,6 @@
     </SourceWebProjects>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Feature\SLH.Feature.Products\SLH.Feature.Products.csproj">
-      <Project>{f9431ceb-c242-4518-a888-d178608108c1}</Project>
-      <Name>SLH.Feature.Products</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Foundation\SLH.Foundation.Buckets\SLH.Foundation.Buckets.csproj">
       <Project>{7999b10b-aeff-473d-bc78-d7555af293a5}</Project>
       <Name>SLH.Foundation.Buckets</Name>
