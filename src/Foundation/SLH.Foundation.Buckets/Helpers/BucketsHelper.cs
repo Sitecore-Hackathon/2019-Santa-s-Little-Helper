@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Sitecore.Data.Fields;
 using Sitecore.Shell.Applications.ContentEditor;
+using DateTime = System.DateTime;
 
 namespace SLH.Foundation.Buckets.Helpers
 {
@@ -75,11 +76,11 @@ namespace SLH.Foundation.Buckets.Helpers
 
                 case "date":
                     DateField dateField = item.Fields[field.Name];
-                    return dateField.DateTime.ToString("d");
+                    return dateField.DateTime != DateTime.MinValue ? dateField.DateTime.ToString("d") : string.Empty;
 
                 case "datetime":
                     DateField datetimeField = item.Fields[field.Name];
-                    return datetimeField.DateTime.ToString("g");
+                    return datetimeField.DateTime != DateTime.MinValue ? datetimeField.DateTime.ToString("g") : string.Empty;
 
                 case "number":
                     return item.Fields[field.Name].Value;
