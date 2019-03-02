@@ -26,14 +26,7 @@ namespace SLH.Foundation.Buckets.Controllers
             return View(response);
         }
 
-        public ActionResult Categories(string bucketId)
-        {
-            ViewBag.ArticleType = bucketId;
-
-            return PartialView();
-        }
-
-        public ActionResult TableContainer(string bucketId, string name = null)
+        public ActionResult BucketList(string bucketId)
         {
             ViewBag.ArticleType = bucketId;
 
