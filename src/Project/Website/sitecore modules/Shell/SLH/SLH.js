@@ -91,7 +91,6 @@ function SetupTable(tableId, categoryId, articleType) {
     $.get("/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId, function (bucketData) {
         
 	    var allowSorting = false;
-        var pagination = "local";
 
         if (!bucketData || bucketData.length === 0) {
             alert("No items found.");
@@ -139,7 +138,8 @@ function SetupTable(tableId, categoryId, articleType) {
 
         $(tableId).tabulator({
             data: bucketData,
-		    pagination: pagination,
+            pagination: "local",
+            paginationSize: 10,
             height: "90%",
             layout: "fitColumns",
             placeholder: "No Data Set",
