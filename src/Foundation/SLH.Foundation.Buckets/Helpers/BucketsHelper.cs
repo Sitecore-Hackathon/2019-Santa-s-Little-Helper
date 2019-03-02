@@ -21,7 +21,7 @@ namespace SLH.Foundation.Buckets.Helpers
             {
                 var results = context.GetQueryable<SearchBucketItem>().Where(x => x.Path.StartsWith(bucketPath) && x.IsBucket == "1").ToList();
 
-                return results.Select(x => x.GetItem());
+                return results.Select(x => x.GetItem()).OrderBy(x => x.DisplayName);
             }
         }
 
@@ -43,7 +43,7 @@ namespace SLH.Foundation.Buckets.Helpers
                     .Where(predicate)
                     .ToList();
 
-                return results.Select(x => x.GetItem());
+                return results.Select(x => x.GetItem()).OrderBy(x => x.DisplayName);
             }
         }
 
