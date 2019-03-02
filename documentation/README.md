@@ -1,3 +1,69 @@
+
+# Buckets Manager
+
+## Summary
+
+**Category:** Best enhancement to the Sitecore Admin (XP) UI for Content Editors & Marketers
+
+This administrator tool will allow content authors and administrators to easily manage their current items hosted inside a bucket folter. 
+As you might know, sometimes it's hard to visualize content items that live under bucket folders and as a content manager you usually use the search in order to find a specific item, but what if these bucketable items are shown in a friendly interface where you can see exactly which items are bucket folder and its children.
+
+## Pre-requisites
+
+Please make sure you have the following requirements installed:
+
+- Sitecore 9.1.0 rev. 001564 (Initial Release)
+
+## Installation
+
+Please follow this instructions to install this module:
+
+1. Use the Sitecore Installation wizard to install the [package](resources/BucketsManager-1.0.zip)
+2. Publish site (smart mode)
+
+For more details, read our [Installation Guide](Installation_Guide.md)
+
+### Enable the Feature on your existing site
+
+1. Open Sitecore Desktop from the LaunchPad
+2. Click on the start up menu and you will see a new application
+3. Select that application and a window will come up and it's ready to be used
+
+
+## Configuration
+
+You don't need to configure anything else, the module is ready to be used once it's correctly installed.
+No file configurations are needed. 
+
+
+## Usage
+
+### Content Editor
+
+
+
+### Experience Editor
+
+
+## Video
+
+Here is our presentation of this module. 
+
+[direct link](resources/SCHackathon_2019.mp4) to the video, 
+
+Youtube:
+
+[![Sitecore Hackathon Video](https://img.youtube.com/vi/sffI8ac8hPU/0.jpg)](https://youtu.be/sffI8ac8hPU)
+
+
+
+
+
+
+
+
+
+
 # Documentation
 
 The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
