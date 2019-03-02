@@ -99,7 +99,7 @@ namespace SLH.Foundation.Buckets.Helpers
                 case "droptree":
                 case "reference":
                 case "tree":
-                    return item.GetPropertyAsItem(field.Name).DisplayName;
+                    return item.GetPropertyAsItem(field.Name)?.DisplayName;
 
                 case "file":
                     FileField fileField = item.Fields[field.Name];
@@ -107,7 +107,7 @@ namespace SLH.Foundation.Buckets.Helpers
 
                 case "image":
                     ImageField imgField = item.Fields[field.Name];
-                    return $"<img src=\"{imgField.MediaItem.GetImageUrl()}\" alt=\"{imgField.Alt}\" />"; 
+                    return $"<img src=\"{imgField.MediaItem.GetImageUrl()}\" alt=\"{imgField.Alt}\" class=\"content-image\" />"; 
 
                 case "general link":
                 case "general link with search":

@@ -2,6 +2,7 @@
 
 var categories = [];
 var tableData;
+var currentBucketId;
 
 $.get("/slh_api/buckets/GetBuckets", function (data) {
     categories = data;
@@ -78,8 +79,15 @@ function OpenTab(tabId) {
     return false;
 }
 
-function SetupTable(tableId, categoryId, articleType) {
+function RefreshTableData(tableId, categoryId, articleType) {
+    currentBucketId = articleType;
+    $.get("/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId, function (bucketData) {
+        $(tableId).tabulator("setData", bucketData);
+    });
+}
 
+function SetupTable(tableId, categoryId, articleType) {
+    currentBucketId = articleType;
     $.get("/slh_api/buckets/GetBucketableItems?bucketid=" + articleType + "&category=" + categoryId, function (bucketData) {
         
 	    var allowSorting = false;
@@ -132,7 +140,7 @@ function SetupTable(tableId, categoryId, articleType) {
         $(tableId).tabulator({
             data: bucketData,
 		    pagination: pagination,
-            height: "100%",
+            height: "90%",
             layout: "fitColumns",
             placeholder: "No Data Set",
             movableRows: allowSorting, //enable user movable rows
@@ -176,8 +184,8 @@ $(function () {
 		close: function () {
 			$("#edit-item-content").html("");
 			top._close = top.close;
-			var tableId = $("#table-id").val();
-			$(tableId).tabulator("setData");
+            var tableId = $("#table-id").val();
+            RefreshTableData(tableId, "", currentBucketId);
 		}
 	});
 
@@ -200,7 +208,7 @@ $(function () {
 						var messageDialogOpen = $("#dialog-publish-message").dialog('isOpen');
 						if(!messageDialogOpen){
 							var tableId = $("#table-id").val();
-							$(tableId).tabulator("setData");
+                            RefreshTableData(tableId, "", currentBucketId);
 						}
 					}
 					else {
@@ -236,7 +244,7 @@ $(function () {
 		close: function() {
 			if($("#refresh-table").val() == "true"){
 				var tableId = $("#table-id").val();
-				$(tableId).tabulator("setData");
+                RefreshTableData(tableId, "", currentBucketId);
 				$("#refresh-table").val("false");
 			}
 		}
