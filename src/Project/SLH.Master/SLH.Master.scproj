@@ -29,7 +29,7 @@
     <DisableFileDeployment>False</DisableFileDeployment>
     <LightningDeployMode>False</LightningDeployMode>
     <SitecoreWebUrl>http://sc910.sc</SitecoreWebUrl>
-    <SitecoreAccessGuid>e3d2b120-fe61-41c3-8706-59844cc89de8</SitecoreAccessGuid>
+    <SitecoreAccessGuid>5f7b38b6-4bb7-452f-8240-79c7731ff4e1</SitecoreAccessGuid>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\SLH.Master_Debug.xml</ValidationSettingsFilePath>
   </PropertyGroup>

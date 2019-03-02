@@ -124,6 +124,7 @@
     <Compile Include="Controllers\BucketManagerController.cs" />
     <Compile Include="Controllers\BucketsController.cs" />
     <Compile Include="Helpers\BucketsHelper.cs" />
+    <Compile Include="Helpers\ItemHelper.cs" />
     <Compile Include="Models\BucketItem.cs" />
     <Compile Include="Models\BucketableResponse.cs" />
     <Compile Include="Models\BucketResponse.cs" />
