@@ -91,7 +91,7 @@ namespace SLH.Foundation.Buckets.Helpers
                 case "multilist with search":
                 case "multilist":
                     var items = item[field.Name].GetMultiListParameterItems();
-                    return string.Join(", ", items.Select(x => x.DisplayName));
+                    return items != null ? string.Join(", ", items.Select(x => x.DisplayName)) : string.Empty;
 
                 case "grouped droplink":
                 case "droplink":
