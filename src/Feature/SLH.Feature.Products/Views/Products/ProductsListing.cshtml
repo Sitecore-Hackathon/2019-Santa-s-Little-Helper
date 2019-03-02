@@ -12,7 +12,15 @@
     <ul>
         @foreach (var bucketable in item.BucketableItems)
         {
-            <li>@bucketable.Name = @bucketable.ID</li>
+            <li>@bucketable.Item.Name = @bucketable.Item.ID</li>
+
+            <ol>
+                @foreach (var bucketableTemplateField in bucketable.TemplateFields)
+                {
+                    <li>@bucketableTemplateField.Name</li>
+                }
+
+            </ol>
         }
     </ul>
 }

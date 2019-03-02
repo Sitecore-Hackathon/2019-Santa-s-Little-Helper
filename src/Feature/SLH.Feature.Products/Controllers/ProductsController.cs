@@ -11,6 +11,7 @@ using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Data.Managers;
 using SLH.Feature.Products.Models;
 
 namespace SLH.Feature.Products.Controllers
@@ -27,10 +28,27 @@ namespace SLH.Feature.Products.Controllers
                 var bucketItem = new Bucket {Item = bucket};
 
                 var bucketables = GetAllItemsFromBucket(bucket.Paths.Path);
-                bucketItem.BucketableItems = bucketables.ToList();
+
+                var bucketableItems = new List<BucketableItem>();
+                foreach (var bucketable in bucketables)
+                {
+                    var item = new BucketableItem();
+                    var template = TemplateManager.GetTemplate(bucketable);
+
+                    var tem = template.GetBaseTemplates().Where(x => x.DescendsFrom(new ID("{1930BBEB-7805-471A-A3BE-4858AC7CF696}")));
+
+                    var fields = tem.SelectMany(x => x.GetFields(false)).Distinct();
+                    item.Item = bucketable;
+                    item.TemplateFields = fields;
+                    bucketableItems.Add(item);
+
+                }
+                bucketItem.BucketableItems = bucketableItems;
 
                 bucketList.Add(bucketItem);
             }
+
+            
             
             return View(bucketList);
         }
