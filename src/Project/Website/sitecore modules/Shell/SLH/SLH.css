@@ -1,0 +1,42 @@
+﻿#container {
+    /*overflow-y: scroll;*/
+}
+
+.custom-font {
+	font-family: 'Oswald', sans-serif;
+}
+
+#category-tabs {
+	border: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+.open-category:hover {
+	color: blue;
+}
+
+.actions {
+	width: 75px;
+    display: inline-block;
+}
+
+.edit-frame {
+	border: 0px solid #bfbfbf;
+    padding: 0;
+	height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.edit-item  .ui-dialog-titlebar {
+	display: none;
+}
+
+.ui-tabs-vertical { width: 1400px; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 110px; margin: 1em 0; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; width: 100%; outline: none; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; margin-bottom: 0.2em; }
+.ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 1200px;}

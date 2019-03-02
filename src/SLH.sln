@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Feature.Products", "Fea
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SLH.Master", "Project\SLH.Master\SLH.Master.scproj", "{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SLH.Core", "Project\SLH.Core\SLH.Core.scproj", "{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,12 @@ Global
 		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD98B5B-A9F6-4734-A75A-1A85D5B9DEAD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
