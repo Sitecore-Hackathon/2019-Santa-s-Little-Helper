@@ -107,13 +107,13 @@ namespace SLH.Foundation.Buckets.Helpers
 
                 case "image":
                     ImageField imgField = item.Fields[field.Name];
-                    return $"<img src={imgField.MediaItem.GetImageUrl()} alt={imgField.Alt} />"; 
+                    return $"<img src=\"{imgField.MediaItem.GetImageUrl()}\" alt=\"{imgField.Alt}\" />"; 
 
                 case "general link":
                 case "general link with search":
                 case "custom general link":
                     LinkField linkField = item.Fields[field.Name];
-                    return $"<a href={linkField.GetGeneralLinkUrl()} target={linkField.GetTarget()} >{linkField.Title}</a>";
+                    return $"<a href=\"{linkField.GetGeneralLinkUrl()}\" target=\"{linkField.GetTarget()}\" >{linkField.Title}</a>";
 
                 case "password":
                 case "icon":
