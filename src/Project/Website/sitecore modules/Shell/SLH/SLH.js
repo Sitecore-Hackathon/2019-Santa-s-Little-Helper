@@ -197,7 +197,7 @@ $(function () {
 		modal: true,
 		buttons: {
 			"Publish": function () {
-				$("#publish-message").html("Publishing article...");
+				$("#publish-message").html("Publishing item...");
 				$("#refresh-table").val("false");
 				
 				var id = $("#item-id").val();
