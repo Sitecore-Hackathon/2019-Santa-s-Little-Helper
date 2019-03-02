@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {F6BD8E75-100E-4695-AE01-4FB275C0B8FF}
+database: master
+path: /sitecore/content/Global/Articles/2019/03/02/01/15
+parent: {457EEC72-9126-4DB5-A0D6-F22AC16F51DC}
+name: 15
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADB6CA4F-03EF-4F47-B9AC-9CE2BA53FF97}
+templatekey: Bucket
+created: 20190302T011533Z
+
+----version----
+language: en
+version: 1
+revision: cbcb8523-3fc5-43e8-851b-610e6dc77c21
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T011533Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cbcb8523-3fc5-43e8-851b-610e6dc77c21
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T011533Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

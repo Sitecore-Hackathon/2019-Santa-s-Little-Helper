@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Website", "Project\SLH.Website.csproj", "{F9E8D36E-8A9A-47B0-9201-69DA7941486C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Website", "Project\Website\SLH.Website.csproj", "{F9E8D36E-8A9A-47B0-9201-69DA7941486C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{B7DDB8BC-3415-4B74-AD8A-EB80D67BA362}"
 EndProject
@@ -14,6 +14,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Feature1", "Feature\SHL.Feature1\SLH.Feature1.csproj", "{8DF6F7E2-A436-4628-96B2-BDFDB052D012}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Foundation1", "Foundation\SLH.Foundation1\SLH.Foundation1.csproj", "{E1A894EB-B826-4092-A896-63A3C5011A50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLH.Feature.Products", "Feature\SLH.Feature.Products\SLH.Feature.Products.csproj", "{F9431CEB-C242-4518-A888-D178608108C1}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "SLH.Master", "Project\SLH.Master\SLH.Master.scproj", "{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,16 @@ Global
 		{E1A894EB-B826-4092-A896-63A3C5011A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1A894EB-B826-4092-A896-63A3C5011A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1A894EB-B826-4092-A896-63A3C5011A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9431CEB-C242-4518-A888-D178608108C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9431CEB-C242-4518-A888-D178608108C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9431CEB-C242-4518-A888-D178608108C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9431CEB-C242-4518-A888-D178608108C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B267B7DF-0DF2-4B1F-ACAF-9F6E5B39814A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +55,7 @@ Global
 		{F9E8D36E-8A9A-47B0-9201-69DA7941486C} = {87BD23AD-BAB4-48BD-B60C-48E530C7B1EF}
 		{8DF6F7E2-A436-4628-96B2-BDFDB052D012} = {B7DDB8BC-3415-4B74-AD8A-EB80D67BA362}
 		{E1A894EB-B826-4092-A896-63A3C5011A50} = {F26ED3C8-7669-443E-9186-5AED3AB8052D}
+		{F9431CEB-C242-4518-A888-D178608108C1} = {B7DDB8BC-3415-4B74-AD8A-EB80D67BA362}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF8A97C5-CDCA-4561-A2B1-CEF914C9C6A1}

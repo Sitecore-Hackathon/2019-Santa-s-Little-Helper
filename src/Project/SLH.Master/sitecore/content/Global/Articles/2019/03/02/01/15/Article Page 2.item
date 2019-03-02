@@ -1,0 +1,59 @@
+----item----
+version: 1
+id: {53ACD0F7-5782-43D8-B257-296477C2A554}
+database: master
+path: /sitecore/content/Global/Articles/2019/03/02/01/15/Article Page 2
+parent: {F6BD8E75-100E-4695-AE01-4FB275C0B8FF}
+name: Article Page 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {39EB9C41-896C-4884-A686-CC648348D647}
+templatekey: Article Page
+created: 20190302T011533Z
+
+----version----
+language: en
+version: 1
+revision: 52d99b9d-f0e4-4132-b2f9-2321b94334ce
+
+----field----
+field: {306D1C40-4B7C-4E83-8CE6-752908F3AAEC}
+name: Headline
+key: headline
+content-length: 14
+
+Article Page 2
+----field----
+field: {1BE135C0-3A8A-4B25-AED6-8728B81C0FF8}
+name: Author
+key: author
+content-length: 38
+
+{DE7C1F86-6837-480E-97C0-940AE5A0D3B2}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T011533Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+52d99b9d-f0e4-4132-b2f9-2321b94334ce
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T013746Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

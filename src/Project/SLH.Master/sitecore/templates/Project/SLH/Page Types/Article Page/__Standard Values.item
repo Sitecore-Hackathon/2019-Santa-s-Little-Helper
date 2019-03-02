@@ -1,0 +1,96 @@
+----item----
+version: 1
+id: {27AFCD1B-A1C9-43C6-89E1-94E4E3736144}
+database: master
+path: /sitecore/templates/Project/SLH/Page Types/Article Page/__Standard Values
+parent: {39EB9C41-896C-4884-A686-CC648348D647}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {39EB9C41-896C-4884-A686-CC648348D647}
+templatekey: Article Page
+created: 20190302T011327Z
+
+----field----
+field: {C9283D9E-7C29-4419-9C28-5A5C8FF53E84}
+name: __Bucketable
+key: __bucketable
+content-length: 1
+
+1
+----version----
+language: en
+version: 1
+revision: 483418ee-9d51-4935-a119-5a7b35486acc
+
+----field----
+field: {306D1C40-4B7C-4E83-8CE6-752908F3AAEC}
+name: Headline
+key: headline
+content-length: 5
+
+$name
+----field----
+field: {AB0786BA-1326-4EE1-810E-B13A355A3E3E}
+name: Date
+key: date
+content-length: 16
+
+20190301T050000Z
+----field----
+field: {39606E7C-37F8-4554-89CF-169A81742526}
+name: Text
+key: text
+content-length: 1481
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt massa ultricies nisl gravida, at dapibus enim pharetra. Duis faucibus elit sit amet lacus varius, at efficitur lacus luctus. Pellentesque volutpat sem est, sit amet tempus sapien commodo a. Praesent gravida posuere interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi semper, risus eu ultrices malesuada, arcu mi iaculis arcu, quis porttitor nunc felis eget massa. Maecenas dignissim ex vel mauris vestibulum pharetra. Sed sollicitudin nisi nunc, in imperdiet purus ultrices vitae. Praesent nec convallis mi, ut tincidunt sem. Vestibulum malesuada pellentesque varius. Pellentesque ut mauris posuere, varius felis a, porta est. Nulla commodo pulvinar arcu id scelerisque.</p>
+
+<p>Nunc efficitur ex nec lectus placerat fringilla. Nulla tempor, dui molestie ultrices efficitur, ante orci laoreet turpis, quis vulputate nulla nibh ut metus. Suspendisse id consequat leo. Donec lorem urna, vehicula sit amet lorem ac, aliquam lacinia quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris maximus non odio a luctus. Morbi a orci rutrum, vestibulum leo id, cursus quam. Sed ut tellus sodales, fringilla justo vel, suscipit ex. Praesent aliquam velit vel leo finibus blandit. Nullam euismod mi suscipit, sollicitudin elit ac, tempor leo. Curabitur non lobortis sem. Etiam ultrices velit neque, id tristique turpis efficitur mattis.</p>
+----field----
+field: {1BE135C0-3A8A-4B25-AED6-8728B81C0FF8}
+name: Author
+key: author
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T011327Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+483418ee-9d51-4935-a119-5a7b35486acc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T013754Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

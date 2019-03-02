@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {71302B52-DF34-4A56-A2E4-FB96F933FBF8}
+database: master
+path: /sitecore/content/Home/Products/2019/03/02/02/00/Product 2
+parent: {93C82AD1-DF73-476D-AA36-5E12B5231FA8}
+name: Product 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {01347717-4877-4DEB-812E-3F6712767739}
+templatekey: Product Page
+created: 20190302T020019Z
+
+----version----
+language: en
+version: 1
+revision: 4bb1f195-d81c-4016-850d-f8b82a00033e
+
+----field----
+field: {B89055C4-F62B-43FD-AC57-D04EA30E29B2}
+name: Title
+key: title
+content-length: 9
+
+Product 2
+----field----
+field: {0592853E-E43A-4F9D-9DC4-7B67E0F4D5BD}
+name: SKU
+key: sku
+content-length: 10
+
+0987654321
+----field----
+field: {BF1BF8A8-8ECB-4ACB-9616-EC4F76D243BD}
+name: Categories
+key: categories
+content-length: 38
+
+{3F293E33-D333-400C-B08E-A56F4A5956D8}
+----field----
+field: {0EE27C71-CA1C-4C62-BE12-C27C29E3EC29}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{5090EDEC-88D2-4252-8D0F-19ABCDDC78C7}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T020020Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4bb1f195-d81c-4016-850d-f8b82a00033e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T020040Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

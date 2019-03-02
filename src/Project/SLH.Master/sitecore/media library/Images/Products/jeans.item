@@ -1,0 +1,157 @@
+----item----
+version: 1
+id: {AB568769-6E8E-45C8-81E8-1FAEF8AAAAB6}
+database: master
+path: /sitecore/media library/Images/Products/jeans
+parent: {50993703-CAAC-49AC-9196-CCE31AB3498C}
+name: jeans
+master: {00000000-0000-0000-0000-000000000000}
+template: {DAF085E8-602E-43A6-8299-038FF171349F}
+templatekey: Jpeg
+created: 20190302T015554Z
+
+----field----
+field: {40E50ED9-BA07-4702-992E-A912738D32DC}
+name: Blob
+key: blob
+content-length: 2754
+
+/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAd
+Hx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3
+Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAKAAdgMBIgACEQED
+EQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABKEAABAwICBAkGCQkJAQAAAAABAAID
+BBEFBgcSITETMkFRYXGhssEiUoGRorEUIzZic3STs8IWJCYzQkVkgpI0Q1Vyo8PR4fAV/8QAFQEB
+AQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwC0kREB
+EUdiGOYZhrmMrq2GBz7luud9kEiuHODW3cbBQpzdl4fvek/rXgxfN+CGmd8HxKne4AkBrroJabMO
+DQTPhmxOkjlYbOY6UAtPMV0/KjAR++KH7dv/ACqNmnMsr5HuBc9xc485JuvMHG7juu4naUF8nNeX
+xvxmh+2C6nN2XRvxmj+0CohxdbYL+ldLu83tQXx+WOXP8YpfQ+6laCupcRpxUUNRHPCSQHxm4uN4
+XziNYX2DerR0P1t6fEaB17te2dvpGqe6EFioiICIiAiIgxVL+Dge7oVLZzqnVOOzbbtiAjHvPaVc
+WKu1aU9OxUbi0nC4hUyedK49pQRslzK0czTt9K4OsFlIF722rq8+SqrCS/fq8q6uvcEjZt9yyLg7
+dhQctvq7lx0ru1cCxOw8iDrYF2tbat20TzcHmWSImwmpXttz2c0+BWlkWC2fRq/VzhRDzmyD2CfB
+BdSIiiCIiAiIgjcaP5sOtUbUXMrj0q8cb/s+xUZMfKcetFYiVikd5J2LuSsT91lQ1hey7WC6MaA6
++8nn5FltsQdG7SkYAXO5y7MsgOGxbHo3aTnChI/ZEh9hy11+5bToujL81tI/u6eR3uHiiLkREUBE
+RAREQRuND83HWqOnb8ZIOZxCvPGRem9Ko2uGrVTgcj3e9B4riw6lic8A7Uv5A6l453XfGwHjSNHa
+FRIM37VkO5dWhcuIsisY4yyMCxA7T1LK07ER1kOxbzogh1sZrp7fq6UM/qcD+FaJIdiszQ5D+Z4n
+U23ysjv1An8QUFioiICIiAiIg8WLC9KehUhjTODxSrYNwmfb1lXniDdaleFS2aY+DxyqHnEO7Ag1
+1+6yw0MIqMZooSL68w7Nvgs0l7vHSV6crQ8JmvDAeSRx9hyoxx32g8hK5eskzODrKhnmyuHaVied
+/UgUkXDulvuZE+TZ0Aldm8VevAY+EbibuRmHyn3BeRvEQYpD5PpVvaJoOCyu+S22aqe71BrfBVDL
+uCu3RzDwOTcP+eHv9bz4WUGyoiICIiAiIgx1A1oHjoVO54j1MaDgONED2kK5H7WHqVTaQGatfTu5
+2uHqP/aDSZG/GP61IZNGtm+hA5BIfYcvJMLOcepezIvlZwpTzNl7hVHGLM1MZr2/xDz2leF+53Up
+LHxq5hrxzylRsh8lw6EE5lSHXwvHpLbqTV9YcfBQrOItrybEHZXxt/K8lnqjJ/EtSjPxZ6kGOU3a
+Ff2VYfg+WsLitbVpY79eqF8/Tn4sn5pX0hRR8DR08Q3Mia31CygzIiICIiAiIg4O4qrtIzLTUz+Z
+7x7laSrjSPH8Q13mzeBQV1U73dS9+j5t83QdEcp9gqPquNbnaFKaPB+l0P0MvcKo65kGrmKt6ZL9
+gUTIeMpnNYtmSst5zT7IUM8X1kG75GF8qYqOed33bVpTOJ6Fu2QTrZaxZtt1SR/pNWks4noQcRR8
+NPDFbjva31my+kDvsvnrBY+ExrD4ztvUxD2wvoU71AREQEREBERAWiaRIx/8+V3mvae23it7Wm6Q
+GXwyp6mn2ggqOs2Pb/l8VK6PPlhT9MUvcKiq7jMPzfFS2jwXzfTHmil7hVHbN3ykq/5e4FCHpU5n
+AfpHV/ydwKDO1Fbxo9H6PYx9c/2mLSRsYOpbvo9+T2MfXD901aP+wOpESeVxr5lwsHd8Kj7wV+qg
+8pC+acKH8VH71figIiICIiAiIgLUs/C+E1X0d+0LbVq2ehfCav6EoKYxDaYrbtvgpvR2NXNtL0xS
+9wqEq9piA5yprR8b5wpwNwhl7hVHOcflFV9TO6FBlTecflHV9TO4FAk86K3rR38nMY+uH7pq0gmz
+Qt/yFh1bS5cr31NO+NlVPwkGtve3UAvbmWh1UEtLKYKiN0Ujd7HixREpksa2bsJHL8Iafer6VI6O
+8PqavNNHUwRF0NI8vmk5G7DYde3cruUBERAREQEREBa1nZpdhdSALngXbB1LZVgqaZlQ2z77NyD5
+2nP6vmF1sejvCcQlzBDiUdM/4HGyTWmOxpu0gWvv3jcrR/JbC3VQqZqOB8oN9YxglTMcTI26rWgD
+cgpLO1HURYvUVb4nCnfq2kt5OxoG3m3cqgKOkqK+eOmo4zLPKbMY3/27pX0JNh8Et9lljoMJo6GR
+8tPBEyV/GexgBKDnDaL4PhFJSTBpdFAxjrbrhoBssNVgdHVN1ZYmPZ5r2gjtUoiDy4fQU2HU7aej
+hZDE3cxjbBepEQEREBERB//Z
+----field----
+field: {22EAC599-F13B-4607-A89D-C091763A467D}
+name: Width
+key: width
+content-length: 3
+
+118
+----field----
+field: {DE2CA9E4-C117-4C8A-A139-1FF4B199D15A}
+name: Height
+key: height
+content-length: 3
+
+160
+----field----
+field: {C06867FE-9A43-4C7D-B739-48780492D06F}
+name: Extension
+key: extension
+content-length: 3
+
+jpg
+----field----
+field: {6F47A0A5-9C94-4B48-ABEB-42D38DEF6054}
+name: Mime Type
+key: mime type
+content-length: 10
+
+image/jpeg
+----field----
+field: {6954B7C7-2487-423F-8600-436CB3B6DC0E}
+name: Size
+key: size
+content-length: 4
+
+2013
+----field----
+field: {CB09946F-3218-4823-87D2-D5007C199A96}
+name: Dimensions
+key: dimensions
+content-length: 9
+
+118 x 160
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 61
+
+-/media/AB5687696E8E45C881E81FAEF8AAAAB6.ashx?h=16&thn=1&w=16
+----version----
+language: en
+version: 1
+revision: bfa28533-467b-4abe-b750-1a6186f15038
+
+----field----
+field: {65885C44-8FCD-4A7F-94F1-EE63703FE193}
+name: Alt
+key: alt
+content-length: 4
+
+jean
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T015554Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bfa28533-467b-4abe-b750-1a6186f15038
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T015618Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

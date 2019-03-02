@@ -1,0 +1,19 @@
+﻿@model List<SLH.Feature.Products.Models.Bucket>
+
+@if (Model == null)
+{
+    <p>NOOOO</p>
+}
+
+
+@foreach (var item in Model)
+{
+    <h3>@item.Item.Name - @item.Item.ID</h3>
+    <ul>
+        @foreach (var bucketable in item.BucketableItems)
+        {
+            <li>@bucketable.Name = @bucketable.ID</li>
+        }
+    </ul>
+}
+

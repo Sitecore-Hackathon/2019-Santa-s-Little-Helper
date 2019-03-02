@@ -1,0 +1,87 @@
+----item----
+version: 1
+id: {F618C64E-D06A-454D-8BA6-E08CED617BBC}
+database: master
+path: /sitecore/content/Global/Authors/2019/03/02/01/18/Santiago Morla
+parent: {45D321FA-73CA-4E97-AC65-545E3F013EFF}
+name: Santiago Morla
+master: {00000000-0000-0000-0000-000000000000}
+template: {6BF19AF5-0375-4F71-8222-6015062D257A}
+templatekey: Author
+created: 20190302T011803Z
+
+----field----
+field: {9DAFCA1D-D618-4616-86B8-A8ACD6B28A63}
+name: __Bucket Parent Reference
+key: __bucket parent reference
+content-length: 38
+
+{8A31A1FF-CD93-4E8D-B0E9-16A4136F9705}
+----version----
+language: en
+version: 1
+revision: fe74b729-2851-48e0-9708-7a8b48ac557a
+
+----field----
+field: {77FB1CF5-CB45-4E33-B370-3024C3EBB5BB}
+name: Name
+key: name
+content-length: 14
+
+Santiago Morla
+----field----
+field: {7747F0DD-9EE5-47DF-8A4B-80E19A36DF77}
+name: Job Title
+key: job title
+content-length: 9
+
+Developer
+----field----
+field: {706C47D2-EDD3-4BF2-99A4-08ACDB2CE597}
+name: Summary
+key: summary
+content-length: 303
+
+<p>Pellentesque volutpat sem est, sit amet tempus sapien commodo a. Praesent gravida posuere interdum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi semper, risus eu ultrices malesuada, arcu mi iaculis arcu, quis porttitor nunc felis eget massa.</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T011803Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fe74b729-2851-48e0-9708-7a8b48ac557a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T011836Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
