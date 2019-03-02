@@ -109,7 +109,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\SLHApiController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,7 +116,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore modules\Shell\SLH\SLH.html" />
     <Content Include="sitecore modules\Shell\SLH\SLH.css" />
     <Content Include="sitecore modules\Shell\SLH\SLH.js" />
     <Content Include="Views\web.config" />
@@ -128,7 +126,6 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\Shared\Default Layout.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Views\SLHApi\SLHMain.cshtml" />
     <None Include="Properties\PublishProfiles\JuanProfile.pubxml" />
     <None Include="Web.config" />
     <None Include="Web.Debug.config">
@@ -140,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

@@ -114,10 +114,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Views\BucketManager\_Layout.cshtml" />
+    <Content Include="Views\BucketManager\Index.cshtml" />
+    <Content Include="Views\BucketManager\TableContainer.cshtml" />
+    <Content Include="Views\BucketManager\Categories.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BucketManagerController.cs" />
     <Compile Include="Controllers\BucketsController.cs" />
     <Compile Include="Helpers\BucketsHelper.cs" />
     <Compile Include="Models\BucketItem.cs" />

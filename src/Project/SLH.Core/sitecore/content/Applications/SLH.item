@@ -14,9 +14,9 @@ created: 20190302T025634Z
 field: {F9814588-762B-4D57-932D-2D6DE100A59A}
 name: Application
 key: application
-content-length: 93
+content-length: 77
 
-<link linktype="external" url="/sitecore%20modules/Shell/SLH/SLH.html" anchor="" target="" />
+<link linktype="external" url="/slh_api/bucketManager" anchor="" target="" />
 ----field----
 field: {FC2B18B3-1631-4C3F-9E47-51DF05030026}
 name: Icon
@@ -76,7 +76,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2100222d-2246-4cad-93ec-dc30a37c4ed6
+revision: 0af10959-d186-4013-ae1c-04025704414f
 
 ----field----
 field: {67B6378B-C9F1-47C7-9CAC-BFA79B0727D9}
@@ -119,14 +119,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2100222d-2246-4cad-93ec-dc30a37c4ed6
+0af10959-d186-4013-ae1c-04025704414f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T084143Z
+20190302T165535Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

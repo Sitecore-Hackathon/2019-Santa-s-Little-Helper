@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/BucketManager/_Layout.cshtml";
+}
+
+@model List<SLH.Foundation.Buckets.Models.BucketResponse>
+
+    <div id="container">
+        <div id="tabs" class="custom-font">
+            <ul>
+                @foreach (var item in Model)
+                {
+                    <li><a href="/slh_api/bucketManager/Categories?bucketId=@item.BucketId">@item.BucketName</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+    <input id="table-id" type="hidden" />
+    <input id="item-id" type="hidden" />
+    <input id="destination-id" type="hidden" />
+    <input id="refresh-table" type="hidden" />
+
+    <div id="edit-item-dialog" title="">
+        <div id="edit-item-content">
+        </div>
+    </div>
+
+    <div id="preview-item-dialog" title="">
+        <div id="preview-item-content">
+        </div>
+    </div>
+
+    <div id="dialog-publish-confirm" title="Publish article?" style="display:none">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>The article will be published now, would you like to continue?</p>
+    </div>
+
+    <div id="dialog-move-confirm" title="Move article?" style="display:none">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>Are you sure you want to move the article to <strong id="move-confirm-destination"></strong>?</p>
+    </div>
+
+    <div id="dialog-publish-message" title="">
+        <p id="publish-message"></p>
+    </div>

@@ -49,7 +49,7 @@ namespace SLH.Foundation.Buckets.Controllers
             return Json(response, JsonRequestBehavior.AllowGet);
         }
 
-        [HttpGet]
+        [HttpPost]
         public ActionResult PublishItem(string itemId)
         {
             Database source = Factory.GetDatabase("master");

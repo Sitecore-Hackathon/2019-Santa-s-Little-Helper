@@ -1,0 +1,17 @@
+﻿@{
+    var articleType = ViewBag.ArticleType;
+    var category = "active";
+    var categoryValue = "active-id";
+}
+
+<div id="@string.Format("{0}tabs-{1}", articleType, categoryValue)">
+
+    <div class="table">
+        <div id="@string.Format("{0}article-table-{1}", articleType, categoryValue)"></div>
+    </div>
+</div>
+
+<script>
+    SetupTable("@string.Format("#{0}article-table-{1}", articleType, categoryValue)", "@category", "@articleType");
+</script>
+
