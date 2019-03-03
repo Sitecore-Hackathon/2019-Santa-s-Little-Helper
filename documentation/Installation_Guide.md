@@ -7,8 +7,9 @@
 ## Installation
 Please follow this instructions to install this module:
 
-1. Sitecore package - Bucktes Manager [package](resources/BucketsManager-1.0.zip)
+1. Sitecore package - Bucktes Manager [package](resources/SLH Bucket Manager.zip)
 	- Use the Sitecore Installation Wizard to upload the package and install the module.
+	- Install Sample Content [package](resources/SLH Bucket Manager - Sample Content Only.zip)
 	
 2. Publish Site
 	- Run a smart publish of the site

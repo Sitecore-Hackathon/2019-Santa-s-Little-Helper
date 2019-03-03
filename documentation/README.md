@@ -1,5 +1,4 @@
-
-# Buckets Manager
+# SLH Bucket Manager
 
 ## Summary
 
@@ -18,7 +17,7 @@ Please make sure you have the following requirements installed:
 
 Please follow this instructions to install this module:
 
-1. Use the Sitecore Installation wizard to install the [package](resources/BucketsManager-1.0.zip)
+1. Use the Sitecore Installation wizard to install the [package](resources/SLH Bucket Manager.zip)
 2. Publish site (smart mode)
 
 For more details, read our [Installation Guide](Installation_Guide.md)
@@ -38,22 +37,53 @@ No file configurations are needed.
 
 ## Usage
 
+Go to Start up menu and Select "SLH Bucket Manager" on the top right menu.
+
+[StartupMenu](images/StartupMenu.png)
+
+This is the view you will see when the module comes up. Here you will see all the bucket folders separated by tabs and inside each tab you will be able to see its children, a bucketable item. 
+
+[Manager](images/Manager.png)
+
+in this view, you will notice that you can publich an item. Just click on the Publish link and it will trigger the publish manager to do it for you. 
+
+[Publish](images/Publish.png)
+
+In this view, you have the abiltity to edit directly the item. You don't need to go to the content author or the experience editor. 
+
+[Edit](images/Edit.png)
+
+It shows only the template fields that belong to that specific template, that means it hides all the standard template fields. 
+
+[BaseTemplates](images/BaseTemplates.png)
+
+If you have a field, different than a single text, it will also show the item name, for instance the items thar are link item such as Droplink, treelist, etc.
+
+[LinkField](images/LinkField.png)
+
+It also handles pagination, every 10 items it will create a new page. For future reales we are planning to make it dynamic so the administrator can set this number. 
+
+[Pagination](images/Pagination.png)
+
+NOTE; For future releases we are planning to make it work with workflows and add the ability to publish all edited item with just one click. Stay tuned!
+
 ### Content Editor
 
-
+No integration with Content Editor. We are planing to create an Editor tab to hanlde bucketable items within the content editor. 
 
 ### Experience Editor
 
+No experience editor feature available.
 
 ## Video
 
 Here is our presentation of this module. 
 
-[direct link](resources/SCHackathon_2019.mp4) to the video, 
+[direct link](resources/Sitecore Hackathon 2019.mp4) to the video, 
 
 Youtube:
 
-[![Sitecore Hackathon Video](https://img.youtube.com/vi/sffI8ac8hPU/0.jpg)](https://youtu.be/sffI8ac8hPU)
+[![Sitecore Hackathon Video](https://img.youtube.com/vi/sffI8ac8hPU/0.jpg)](https://youtu.be/1qN9hxwi5WE)
 
 
 
@@ -61,77 +91,3 @@ Youtube:
 
 
 
-
-
-
-# Documentation
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
-
-## Summary
-
-**Category:** Hackathon Category
-
-What is the purpose of your module? What problem does it solve and how does it do that?
-
-## Pre-requisites
-
-Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
-
-## Installation
-
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
-
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
-
-## Configuration
-
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
-
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
-
-## Usage
-
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
-
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
-
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
-
-You can embed images of different formats too:
-
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
-
-## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
