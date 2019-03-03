@@ -43,27 +43,27 @@ Go to Start up menu and Select "SLH Bucket Manager" on the top right menu.
 
 This is the view you will see when the module comes up. Here you will see all the bucket folders separated by tabs and inside each tab you will be able to see its children, a bucketable item. 
 
-[Manager](images/Manager.png)
+![Manager](images/Manager.png)
 
 in this view, you will notice that you can publich an item. Just click on the Publish link and it will trigger the publish manager to do it for you. 
 
-[Publish](images/Publish.png)
+![Publish](images/Publish.png)
 
 In this view, you have the abiltity to edit directly the item. You don't need to go to the content author or the experience editor. 
 
-[Edit](images/Edit.png)
+![Edit](images/Edit.png)
 
 It shows only the template fields that belong to that specific template, that means it hides all the standard template fields. 
 
-[BaseTemplates](images/BaseTemplates.png)
+![BaseTemplates](images/BaseTemplates.png)
 
 If you have a field, different than a single text, it will also show the item name, for instance the items thar are link item such as Droplink, treelist, etc.
 
-[LinkField](images/LinkField.png)
+![LinkField](images/LinkField.png)
 
 It also handles pagination, every 10 items it will create a new page. For future reales we are planning to make it dynamic so the administrator can set this number. 
 
-[Pagination](images/Pagination.png)
+![Pagination](images/Pagination.png)
 
 NOTE; For future releases we are planning to make it work with workflows and add the ability to publish all edited item with just one click. Stay tuned!
 
@@ -79,7 +79,7 @@ No experience editor feature available.
 
 Here is our presentation of this module. 
 
-[direct link](resources/Sitecore Hackathon 2019.mp4) to the video, 
+![direct link](resources/Sitecore Hackathon 2019.mp4) to the video, 
 
 Youtube:
 
