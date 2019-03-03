@@ -79,7 +79,7 @@ No experience editor feature available.
 
 Here is our presentation of this module. 
 
-[direct link]("resources/Sitecore Hackathon 2019.mp4") to the video, 
+[direct link](resources/Sitecore%20Hackathon%202019.mp4) to the video, 
 
 Youtube:
 
