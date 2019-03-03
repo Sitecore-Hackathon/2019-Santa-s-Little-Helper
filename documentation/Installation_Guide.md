@@ -19,7 +19,7 @@ Please follow this instructions to install this module:
 		
 > Note: No additional file configurations are required.
 
-> You can also install using the Installation Update Wizard and this file: [package](resources/SLH.BucketsManager.update)
+
 
 
 
