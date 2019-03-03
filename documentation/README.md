@@ -17,7 +17,7 @@ Please make sure you have the following requirements installed:
 
 Please follow this instructions to install this module:
 
-1. Use the Sitecore Installation wizard to install the [package](resources/SLH Bucket Manager.zip)
+1. Use the Sitecore Installation wizard to install the [package](resources/SLH%20Bucket%20Manager.zip)
 2. Publish site (smart mode)
 
 For more details, read our [Installation Guide](Installation_Guide.md)
