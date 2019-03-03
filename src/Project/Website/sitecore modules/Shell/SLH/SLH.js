@@ -7,6 +7,10 @@ var currentTableId;
 
 $.get("/slh_api/buckets/GetBuckets", function (data) {
     categories = data;
+    if (!categories || categories.length === 0) {
+        $("#container").hide();
+        $("#no-buckets-found").show();
+    }
 });
 
 var imageFormatter = function (cell, formatterParams) {

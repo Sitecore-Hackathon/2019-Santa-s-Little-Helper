@@ -62,10 +62,16 @@
 .reload-btn {
     position: absolute;
     z-index: 10;
-    right: 10;
-    top: 10;
+    right: 10px;
+    top: 10px;
 }
 
 .reload-btn img {
     width: 16px;
+}
+
+#no-buckets-found {
+    font-size: medium;
+    margin: 30px;
+    display: none;
 }
