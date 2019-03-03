@@ -39,7 +39,7 @@ No file configurations are needed.
 
 Go to Start up menu and Select "SLH Bucket Manager" on the top right menu.
 
-[StartupMenu](images/StartupMenu.png)
+[StartupMenu](images/StartupMenu.png?raw=true "StartupMenu")
 
 This is the view you will see when the module comes up. Here you will see all the bucket folders separated by tabs and inside each tab you will be able to see its children, a bucketable item. 
 
